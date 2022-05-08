@@ -1,0 +1,29 @@
+let employees = [
+    { name: "john", salary: 90000, hireDate: "July 1, 2010" },
+    { name: "david", salary: 75000, hireDate: "August 15, 2009" },
+    { name: "ana", salary: 80000, hireDate: "December 12, 2011" },
+  ];
+
+  //sorting by names
+  var sortedNames = employees.sort(function (a, b) {
+    if (a.name > b.name) return -1;
+    if (a.name < b.name) return 1;
+    return 0;
+  });
+
+  console.log(sortedNames);
+
+
+//   sort by numbers - sort()
+
+var sortByNumbers = employees.sort(function(a,b){
+      return (b.salary)- (a.salary)
+})
+
+console.log(sortByNumbers)
+
+// var arr =[1,5,6,90,10]
+
+// console.log(arr.sort(function(a,b){
+//       return b-a
+// }))
